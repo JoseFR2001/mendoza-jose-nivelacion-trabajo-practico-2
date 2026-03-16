@@ -28,4 +28,17 @@ while ( contador < cantidadPersonas ){
 
 console.table(personas)
 
+const personasOrdenadas = [... personas].sort((a, b) => b[2] - a[2])
+console.table(personasOrdenadas)
+
+const notasPersonas = personas.map(persona => persona[2])
+let sumaNotas = 0
+
+for(const nota of notasPersonas){
+    sumaNotas+=nota
+}
+
+console.log(notasPersonas)
+console.log(sumaNotas)
+
 rl.close()
