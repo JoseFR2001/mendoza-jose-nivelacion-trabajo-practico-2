@@ -39,7 +39,7 @@ while (true) {
 
   const seguir = await rl.question(`Finalizar(Si/No)`);
 
-  if (seguir.toUpperCase() === "SI") {
+  if (seguir.trim().toUpperCase() === "SI") {
     break;
   }
 }
